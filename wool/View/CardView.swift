@@ -12,20 +12,26 @@ struct CardView: View {
     @FetchRequest(entity: Card.entity(), sortDescriptors: []) var cards : FetchedResults<Card>
     
     var body: some View {
-        ZStack(alignment: .bottomTrailing){
+        NavigationView{
             List(cards){item in
                 HStack{
                     Image(item.name!)
                     Text(item.name!)
                     Text(item.no!)
+                    Text(item.remark!)
                 }
             }
-            Button(action: {}, label: {
-                Image(systemName: "plus.circle")
-                    .resizable()
-                    .frame(width: 40, height: 40, alignment: .center)
-                    .padding()
-            })
+            .navigationTitle("账户")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing){
+                    NavigationLink{
+                        AddCardView()
+                    }label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
         }
     }
 }

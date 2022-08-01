@@ -16,6 +16,11 @@
 		194B814C282B6CB900A63F48 /* AddPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B814B282B6CB900A63F48 /* AddPlanView.swift */; };
 		194B814E282B89F400A63F48 /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B814D282B89F400A63F48 /* AddCardView.swift */; };
 		194B8153282BA0DD00A63F48 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B8152282BA0DD00A63F48 /* CardView.swift */; };
+		19EF3C39288FD2AD0059E703 /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF3C38288FD2AD0059E703 /* PlanView.swift */; };
+		19EF3C3B28911AB10059E703 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF3C3A28911AB10059E703 /* IndexView.swift */; };
+		19EF3C3D28911ABE0059E703 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF3C3C28911ABE0059E703 /* ReportView.swift */; };
+		19EF3C4128911D2F0059E703 /* MineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF3C4028911D2F0059E703 /* MineView.swift */; };
+		19F949A528508F8F003D4A81 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F949A428508F8F003D4A81 /* Units.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		194B814B282B6CB900A63F48 /* AddPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanView.swift; sourceTree = "<group>"; };
 		194B814D282B89F400A63F48 /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
 		194B8152282BA0DD00A63F48 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		19EF3C38288FD2AD0059E703 /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
+		19EF3C3A28911AB10059E703 /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
+		19EF3C3C28911ABE0059E703 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		19EF3C4028911D2F0059E703 /* MineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineView.swift; sourceTree = "<group>"; };
+		19F949A428508F8F003D4A81 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +71,7 @@
 		194B8136282B6B6400A63F48 /* wool */ = {
 			isa = PBXGroup;
 			children = (
-				194B814F282B8C6A00A63F48 /* Model */,
+				19F949A328508F82003D4A81 /* Model */,
 				194B814A282B6CA600A63F48 /* View */,
 				194B8137282B6B6400A63F48 /* woolApp.swift */,
 				194B8139282B6B6400A63F48 /* ContentView.swift */,
@@ -87,13 +97,18 @@
 				194B814B282B6CB900A63F48 /* AddPlanView.swift */,
 				194B814D282B89F400A63F48 /* AddCardView.swift */,
 				194B8152282BA0DD00A63F48 /* CardView.swift */,
+				19EF3C38288FD2AD0059E703 /* PlanView.swift */,
+				19EF3C3A28911AB10059E703 /* IndexView.swift */,
+				19EF3C3C28911ABE0059E703 /* ReportView.swift */,
+				19EF3C4028911D2F0059E703 /* MineView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		194B814F282B8C6A00A63F48 /* Model */ = {
+		19F949A328508F82003D4A81 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				19F949A428508F8F003D4A81 /* Units.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,10 +184,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				194B8153282BA0DD00A63F48 /* CardView.swift in Sources */,
+				19EF3C4128911D2F0059E703 /* MineView.swift in Sources */,
 				194B814E282B89F400A63F48 /* AddCardView.swift in Sources */,
+				19EF3C39288FD2AD0059E703 /* PlanView.swift in Sources */,
+				19EF3C3B28911AB10059E703 /* IndexView.swift in Sources */,
 				194B814C282B6CB900A63F48 /* AddPlanView.swift in Sources */,
+				19EF3C3D28911ABE0059E703 /* ReportView.swift in Sources */,
 				194B8141282B6B6700A63F48 /* Persistence.swift in Sources */,
 				194B813A282B6B6400A63F48 /* ContentView.swift in Sources */,
+				19F949A528508F8F003D4A81 /* Units.swift in Sources */,
 				194B8144282B6B6700A63F48 /* wool.xcdatamodeld in Sources */,
 				194B8138282B6B6400A63F48 /* woolApp.swift in Sources */,
 			);

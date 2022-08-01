@@ -9,17 +9,29 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
+    @Environment(\.managedObjectContext) var moc
+    
     var body: some View {
         TabView{
             CardView()
                 .tabItem {
                     Image(systemName: "creditcard")
                 }
-            AddPlanView()
+            PlanView()
                 .tabItem{
-                    Image(systemName: "plus")
+                    Image(systemName: "checkmark.square")
+                }
+            IndexView()
+                .tabItem{
+                    Image(systemName:"house")
+                }
+            ReportView()
+                .tabItem{
+                    Image(systemName: "clock")
+                }
+            MineView()
+                .tabItem{
+                    Image(systemName: "person")
                 }
         }
     }
@@ -27,6 +39,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        let persistenceController = PersistenceController.shared
+        ContentView()
+            .environment(\.managedObjectContext, persistenceController.container.viewContext)
     }
 }

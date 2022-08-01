@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20G527" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Card" representedClassName="Card" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="no" optional="YES" attributeType="String"/>
+        <attribute name="remark" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -15,7 +16,7 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="start" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="total" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
-        <attribute name="unit" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="units" optional="YES" attributeType="String"/>
         <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Card"/>
         <relationship name="ways" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Way"/>
     </entity>
@@ -25,9 +26,9 @@
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Way" positionX="-27" positionY="18" width="128" height="74"/>
-        <element name="Card" positionX="18" positionY="90" width="128" height="74"/>
-        <element name="Plan" positionX="54" positionY="135" width="128" height="164"/>
+        <element name="Card" positionX="-90.9874267578125" positionY="6.00567626953125" width="128" height="103"/>
         <element name="Item" positionX="18" positionY="153" width="128" height="44"/>
+        <element name="Plan" positionX="-355.7029418945312" positionY="272.6062622070312" width="128" height="164"/>
+        <element name="Way" positionX="-334.9229125976562" positionY="-55.93966674804688" width="128" height="74"/>
     </elements>
 </model>
